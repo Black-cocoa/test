@@ -5,7 +5,7 @@
 
 int main(void)
 {
-	typedef double(*lucky)(float, float); //函数指针
+	typedef int(*lucky)(int, int); //函数指针
 	HINSTANCE hdll;    //句柄
 	hdll = LoadLibrary("../Debug/Mul.dll");
 	if (NULL == hdll)

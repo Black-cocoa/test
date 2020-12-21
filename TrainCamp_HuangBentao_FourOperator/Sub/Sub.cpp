@@ -6,7 +6,7 @@ int Sub(int a, int b)
 
 		if (INT_MAX + b < a)
 		{
-			printf("数据溢出\n");
+			printf("减法数据溢出\n");
 			return -1;
 		}
 	}
@@ -14,7 +14,7 @@ int Sub(int a, int b)
 	{
 		if (a + INT_MAX + 1 < -b)
 		{
-			printf("数据溢出\n");
+			printf("减法数据溢出\n");
 			return -1;
 		}
 	}

@@ -4,16 +4,16 @@ int Mul(int a, int b)
 {
 	if (a == 0 || b == 0)
 		return 0;
-	if (a << 31 && b << 31)//负越界判断
+	if ((a & 1 << 31)&(b & 1 << 31))//负越界判断
 	{
 		if ((a > 0) && (b < (-INT_MAX - 1) / a))
 		{
-			printf("数据越界\n");
+			printf("乘法负数据溢出\n");
 			return -1;
 		}
 		if ((a < 0) && (b >(-INT_MAX -1)/a))
 		{
-			printf("数据越界\n");
+			printf("乘法负数据溢出\n");
 			return -1;
 		}
 	}
@@ -21,12 +21,12 @@ int Mul(int a, int b)
 	{
 		if ((a > 0) && (b > INT_MAX / a))
 		{
-			printf("数据越界\n");
+			printf(" b = %d 乘法正数据1溢出\n",b);
 			return -1;
 		}
 		if ((a < 0) && (b < INT_MAX / a))
 		{
-			printf("数据越界\n");
+			printf("乘法负数据2溢出\n");
 			return -1;
 		}
 	}

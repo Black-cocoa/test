@@ -6,7 +6,7 @@ int Add(int a, int b)
 	{
 		if (INT_MAX - a < b)
 		{
-			printf("数据溢出\n");
+			printf("加法数据溢出\n");
 			return -1;
 		}
 	}
@@ -14,7 +14,7 @@ int Add(int a, int b)
 	{
 		if (-INT_MAX-1 - a > b)
 		{
-			printf("数据溢出\n");
+			printf("加法数据溢出\n");
 			return -1;
 		}
 	}
