@@ -1,0 +1,3 @@
+LIBRARY "Mul.dll"
+EXPORTS
+Mul @ 1
