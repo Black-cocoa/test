@@ -19,7 +19,6 @@ int main(void)
 		printf("无法获取函数地址\n");
 		FreeLibrary(hdll);
 	}
-
 	printf("1 + 2 = %d\n", Add(1, 2));
 	printf("2 - 1 = %d\n", Sub(2, 1));
 	printf("1 * 2 = %d\n", Mul(1, 2));
