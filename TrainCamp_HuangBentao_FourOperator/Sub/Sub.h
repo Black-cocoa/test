@@ -2,7 +2,6 @@
 #define __SUB_H
 #include <stdio.h>
 #define INT_MAX 2147483647
-#define INT_MIN -2147483648
 //使用宏来生成动态库时
 #ifdef SUB_EXPORTS   
 #define DLL_SUB __declspec(dllexport)
