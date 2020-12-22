@@ -3,7 +3,7 @@
 #include "../Divs/Divs.h"
 #include "windows.h"
 //#define CONFIG_INI "C:\\Users\\黄本涛\\Documents\\TrainCamp_HuangBentao_FourOperator\\TrainCamp_HuangBentao_FourOperator\\Debug\\Test.ini"
-#define CONFIG_INI "..\\Debug\\Test.ini"
+#define CONFIG_INI "..\\Debug\\Test.ini"   //这里使用相对路径
 #define DATA_SIZE  64
 #define DATA_TEMP  32
 union result_t
