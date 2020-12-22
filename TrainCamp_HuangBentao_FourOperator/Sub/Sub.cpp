@@ -10,9 +10,9 @@ int Sub(int a, int b)
 			return -1;
 		}
 	}
-	if (a< 0 && b < 0)//负溢出
+	if (a< 0 && b > 0)//负溢出
 	{
-		if (a + INT_MAX + 1 < -b)
+		if ((a + INT_MAX) + 1 < b)
 		{
 			printf("减法数据溢出\n");
 			return -1;
